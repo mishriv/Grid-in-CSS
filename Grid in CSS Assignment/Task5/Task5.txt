@@ -1,0 +1,31 @@
+Task 5:
+Problem Statement
+Explain the difference between justify-items and justify-self using code examples.
+
+1- Justify-items: is a property that you apply to the container (the parent element), and it defines the default horizontal alignment for all the items within that container.
+
+Example:
+
+.container {
+  display: grid;
+  justify-items: center;
+} 
+In this example, all items within the .container will be horizontally centered because of the justify-items: center property on the container.
+
+
+2- Justify-self: is a property that you apply to individual items (child elements) within a container, allowing you to override the default alignment set by justify-items for that specific item.
+
+Example:
+
+.container {
+  display: grid;
+  justify-items: center;
+}
+
+.item {
+  justify-self: start
+}
+In this example, even though the container is set to justify-items: center, the .item has its alignment set to start, so it will be left-aligned within the container.
+
+
+*check task.html file for code example.

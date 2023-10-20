@@ -1,0 +1,24 @@
+Problem Statement 
+Explain the use of grid-auto-row and grid-auto-column using code examples.
+
+"grid-auto-row" and "grid-auto-column" are properties used to control the size and behavior of grid tracks that are created automatically when we have more grid items than can fit within the explicitly defined rows and columns. These properties help us to specify the size, position, and alignment of these automatically generated tracks.
+
+1- grid-auto-row: is used to define the size and other properties of implicitly created rows when you have more items than the number of rows defined in your grid.
+
+Example:
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100px;
+} 
+In this example, when we have more items than the grid's defined rows (using grid-template-rows), additional rows will be created automatically, and they will have a height of 100px.
+
+2- grid-auto-column: is used to define the size and other properties of implicitly created columns when you have more items than the number of columns defined in your grid.
+
+Example:
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 100px;
+}
+In this example, when we have more items than the grid's defined columns (using grid-template-columns), additional columns will be created automatically, and they will have a width of 100px.

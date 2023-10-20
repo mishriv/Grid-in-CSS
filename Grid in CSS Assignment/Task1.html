@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galary</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+        }
+
+
+        /* galary using box, defining grit row and column */
+        .photo-galary {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px;
+            gap: 20px;
+            padding: 20px;
+
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        /* css of display 1 */
+        .display-1 {
+            grid-area: 1/1/2/3;
+        }
+
+        /* css of display 2 */
+        .display-2 {
+            grid-area: 1/3/2/4;
+        }
+
+        /* css of display 3 */
+        .display-3 {
+            grid-area: 2/1/4/1;
+        }
+
+        /* css of display 4 */
+        .display-4 {
+            grid-area: 2/2/3/3;
+        }
+
+        /* css of display 5 */
+        .display-5 {
+            grid-area: 2/3/4/4;
+        }
+
+        /* css of display 6 */
+        .display-6 {
+            grid-area: 3/2/4/3;
+        }
+    </style>
+</head>
+<!-- Problem Statement 
+Create an image gallery using a CSS grid.   -->
+
+<body>
+    <div class="photo-galary">
+        <div class="display-1">
+            <img src="https://images.unsplash.com/photo-1572720350370-8080412fc75b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2VhJTIwbGlmZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="image-1" />
+
+        </div>
+        <div class="display-2">
+            <img src="https://images.unsplash.com/photo-1495012379376-194a416fcc5f?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amVsbHlmaXNofGVufDB8fDB8fHww"
+                alt="image-2" />
+
+        </div>
+        <div class="display-3">
+            <img src="https://plus.unsplash.com/premium_photo-1661816310244-a2b0cb455245?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2VhJTIwbGlmZXxlbnwwfHwwfHx8MA%3D%3Ds"
+                alt="image-3" />
+
+        </div>
+        <div class="display-4">
+            <img src="https://images.unsplash.com/photo-1545537619-3b5475acd977?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGplbGx5ZmlzaHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="image-4" />
+
+        </div>
+        <div class="display-5">
+            <img src="https://images.unsplash.com/photo-1613374933062-7aa9f54036ce?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGplbGx5ZmlzaHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="image-5" />
+
+        </div>
+        <div class="display-6">
+            <img src="https://images.unsplash.com/photo-1611304170711-0a02d1b23329?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGplbGx5ZmlzaHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="image-6" />
+
+        </div>
+    </div>
+
+</body>
+
+</html>

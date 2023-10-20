@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <style>
+        /* css of embded text file */
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        .container {
+            width: 500px;
+            border: 2px solid grey;
+            background-color: azure;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            /*horizontal alignment for all items */
+
+        }
+
+        .item1 {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+            background-color: aquamarine;
+            justify-self: start;
+            /* Override alignment for this item */
+
+        }
+
+        .item2 {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #333;
+            background-color: aquamarine;
+            justify-self: end;
+            /* Override alignment for the second item */
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Problem Statement
+Explain the difference between justify-items and justify-self using code examples. -->
+    <iframe src="Task5.txt"></iframe> <!-- Embeded text file attached -->
+    <h1>Example:</h1>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+    </div>
+</body>
+
+</html>
